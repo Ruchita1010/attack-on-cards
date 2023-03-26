@@ -1,7 +1,10 @@
+import './App.css';
+import StartScreen from './components/StartScreen';
+
 const App = () => {
   return (
     <div className="App">
-      <h1>Attack On Cards</h1>
+      <StartScreen />
     </div>
   );
 };

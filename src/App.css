@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: hsl(18, 100%, 37%);
+  --primary-transparent: hsla(18, 100%, 37%, 0.843);
+  --secondary: hsl(0, 100%, 11%);
+  --accent: hsl(55, 50%, 90%);
+  --shadow: hsl(32, 100%, 50%);
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  background: url(./assets/the-rumbling.jpg) no-repeat center/cover;
+}
