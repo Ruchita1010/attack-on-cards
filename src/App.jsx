@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import GameScreen from './components/GameScreen';
 import StartScreen from './components/StartScreen';
 
 const App = () => {
@@ -10,7 +11,7 @@ const App = () => {
       {showStartScreen ? (
         <StartScreen setShowStartScreen={setShowStartScreen} />
       ) : (
-        <div>GameScreen</div>
+        <GameScreen />
       )}
     </div>
   );

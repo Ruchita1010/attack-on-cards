@@ -1,0 +1,22 @@
+.game_screen {
+  height: 100%;
+  padding: 2vmax;
+  backdrop-filter: blur(2px);
+}
+
+.cards_grid {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vmax;
+}
+
+.score_board {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 2vmax;
+  font-family: 'Lora', serif;
+}
