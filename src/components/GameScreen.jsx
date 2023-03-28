@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Card from './Card';
+import Modal from './Modal';
 import getCards from '../utils/cards';
 import styles from '../styles/GameScreen.module.css';
 
@@ -7,6 +8,7 @@ const GameScreen = () => {
   const cards = getCards();
   // to keep track of the cards clicked by the user
   const [clickedCards, setClickedCards] = useState([]);
+  const [showModal, setShowModal] = useState(false);
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
 
@@ -28,6 +30,17 @@ const GameScreen = () => {
     setClickedCards((prevState) => [...prevState, cardName]);
   };
 
+  const handleModalCloseAndReset = () => {
+    resetGame();
+    setShowModal(false);
+  };
+
+  useEffect(() => {
+    if (currentScore === 15) {
+      setShowModal(true);
+    }
+  }, [currentScore]);
+
   return (
     <div className={styles.game_screen}>
       <div className={styles.score_board}>
@@ -43,6 +56,9 @@ const GameScreen = () => {
           />
         ))}
       </div>
+      {showModal ? (
+        <Modal handleModalCloseAndReset={handleModalCloseAndReset} />
+      ) : null}
     </div>
   );
 };
