@@ -15,8 +15,15 @@
 
 .score_board {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 2vmax;
   font-size: 2vmax;
   font-family: 'Lora', serif;
+}
+
+.score_board p {
+  padding: 1vmax;
+  color: var(--accent);
+  box-shadow: 0px 0px 6px 2px var(--shadow);
 }
