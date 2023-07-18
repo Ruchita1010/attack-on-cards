@@ -15,11 +15,11 @@ Keep playing to unlock all 15 cards (≧∇≦)ﾉ
 
 ### Start Screen
 
-![image](./readme-assets/start-screen.png)
+![Rumbling background with a start and info button](https://github.com/Ruchita1010/attack-on-cards/assets/70577616/f3ff1762-0fa4-4f44-aed9-e7fffc5171e3)
 
 ### Game Screen
 
-![image](./readme-assets/game-screen.png)
+![Grid of images of Attack On Titan characters](https://github.com/Ruchita1010/attack-on-cards/assets/70577616/81480c22-5b53-4447-8faf-a5b801902897)
 
 ## Demo
 
